@@ -1,0 +1,36 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+*.env
+
+# Flask-related files
+instance/
+*.db
+
+# IDE-specific files
+.vscode/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Compiled files
+*.pyc
+*.pyo
+
+# Dependencies
+*.egg-info/
+.eggs/
+
+# Static files cache
+staticfiles/
+
+# Node.js files (if applicable)
+node_modules/
