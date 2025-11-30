@@ -276,6 +276,46 @@ footer a{
   flex-direction: column;
 }
 
+/* Animations */
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hover Effect for Skill Icons */
+.skills-logo img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Project Card Hover Effect */
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
