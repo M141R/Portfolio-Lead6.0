@@ -129,6 +129,32 @@ nav {
   gap: 20px;
 }
 
+.nav-links a {
+  position: relative;
+  color: var(--clr1);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--clr3);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--clr3);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 /* Main */
 .main {
   display: grid;
